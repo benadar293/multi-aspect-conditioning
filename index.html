@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="Performance Conditioning for Diffusion-Based Multi-Instrument Music Synthesis">
+  <meta property="og:title" content="Performance Conditioning for Diffusion-Based Multi-Instrument Music Synthesis"/>
+  <meta property="og:description" content="Performance Conditioning for Diffusion-Based Multi-Instrument Music Synthesis"/>
+  <meta property="og:url" content="https://benadar293.github.io/midipm"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/overview.PNG" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="Performance Conditioning for Diffusion-Based Multi-Instrument Music Synthesis">
+  <meta name="twitter:description" content="Performance Conditioning for Diffusion-Based Multi-Instrument Music Synthesis">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/overview.PNG">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Multi-Instrument Synthesis, Diffusion">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Dual Performance-Transcription Conditioning for Diffusion-Based Multi-Instrument Music Synthesis</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Dual Performance-Transcription Conditioning for Diffusion-Based Multi-Instrument Music Synthesis</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Ben Maman</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Johannes Zeitler</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Meinard Müller</a><sup>2</sup>,</span>
+                    <span class="author-block">
+                      <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Amit H. Bermano</a><sup>1</sup>,</span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Tel Aviv University<br><sup>2</sup>International Audio Laboratories Erlangen, Germany<br>
+                      <!-- Conferance name and year</span> -->
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <!-- <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/DatasetDistribution.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                    <span class="link-block">
+                      <a href="static/pdfs/DatasetDistribution.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Data Distribution</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/benadar293/midipm" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Repo</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2309.12283" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="section"> -->
+  <!-- <div class="container is-widescreen"> -->
+
+    <!-- Abstract. -->
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Abstract</h2>
+      <div class="content has-text-justified">
+  <p>
+    Generating multi-instrument music from symbolic music representations is an important task in Music Information Retrieval (MIR). A central challenge in this context is musical and acoustic control in the generation process. That is, control over notes, timbre, and further acoustic properties. Previous works are limited to datasets synthesized by concatenative synthesis, due to lack of real datasets, and lack control over acoustics, other than simple instrument selection.
+
+  As the main contribution of this work, we propose enhancing both realism and acoustic control, by training a diffusion model on real multi-instrument musical performances of diverse performers and instrumentation, while conditioning the model on acoustics of a specific performance.
+
+  To this end, we introduce <i>performance conditioning</i> -- a tool indicating the generative model to synthesize music with the acoustics, style and timbre of specific instruments, taken from specific performances. The acoustic characteristics are implicitly defined by a set of recordings, e.g., tracks of a single CD, sharing the same acoustic conditions. We show this tool is effective in a wide range of scenarios -- generating subtle differences in timbre of an instrument (e.g., different types of church organs), generating different room acoustics, style transfer, or even implicitly generating instrumentation from simple pitch conditions.
+
+  For musical control, we show that state-of-the art transcription and alignment techniques are effective in providing note and instrument conditions for the diffusion model. Most significantly, this enables training on diverse, uncurated, real-world multi-instrument musical performances, including orchestral symphonies, which is yet to be done in previous work, to the best of our knowledge.
+
+  We evaluate our prototype on uncurated performances of diverse instrumentation, with extensive listening tests and established score metrics (FAD), evaluating the different aspects of synthesis - realism, perceptual similarity to the target performance, and accuracy of the musical content. Our method achieves state-of-the-art performance while allowing novel timbre and style control. Our project page, including samples and demonstrations, is available at <a href="https://benadar293.github.io/midipm">benadar293.github.io/midipm</a>.
+  </p>
+      </div>
+    </div>
+  </div>
+  <!--/ Abstract. -->
+
+<!-- </section> -->
+  <br>
+  <!-- <div class="item">
+    <div style="width: 100%; height: 100%">
+      <center><img src="static/images/overview.PNG" width="55%" height="55%"></center>
+    </div>
+  </div> -->
+  <section class="section">
+  <div class="container is-widescreen">
+    <h2 class="title is-3">Contribution</h2>
+    This work complements and expands our <a href="https://benadar293.github.io/midipm">ICASSP 2024 paper</a>. There are 3 significant improvements in this work:
+    <ul style="list-style-type:disc;padding-left:40px">
+    <li>For note conditions we use predictions of a transcriber, rather than alignments. This is practicaly more favourable, since unaligned MIDIs do not always exist.</li>
+    <li>We show that the model can generate performances from pitch-only note conditions, while performance conditioning implicitly controls instrumentation.</li>
+    <li>We perform extensive listening tests, evaluating both realism, and similarity to the target performance.</li>
+    </ul>
+    <br>
+
+    <h2 class="title is-3">Synthesized Samples</h2>
+    We provide generated samples of diverse instruments and ensembles, using different performance conditions. Orchestral sound is obtained by simply using the 'Orchestra' instrument in the input MIDI, and does not require many violin channels etc.
+    <br>
+    For each sample, we provide the input MIDI (upper), and our generated sample (lower). <b>Samples generated with the same performance condition are marked with the same color</b>.
+    <br>
+    <b>See next sections for a demonstration of the performance conditioning effect, and for a comparison with Hawthorne et al.</b>
+    <br>
+
+    All generated samples in this page were generated with the same T5 model from the paper, and vocoded with Soundstream.
+    <br>
+    Contrary to the model in our <a href="https://benadar293.github.io/midipm">ICASSP 2024 paper</a>, this model was trained with note conditions obtained from predictions of an automatic transcriber,
+    rather than alignments.
+    <br><br>
+    <div class="columns is-centered">
+      <div class="column">
+          <!-- <h2 class="title is-7">Brahms Piano Concerto 1, Style: Mitsuko Uchida Playing Beethoven Piano Concertos</h2> -->
+          <small><small>MIDI: <b>Beethoven Pastoral Symphony Part 5</b>
+          <!-- <br>Performance Condition: <b><span style="color:MidnightBlue">Czech Symphony Orchestra playing Beethoven's Coriolan Overture</span></b> -->
+          <br>Performance Condition: <b><span style="color:MediumVioletRed">Czech Symphony Orchestra playing Beethoven's Coriolan Overture</span></b>
+
+          <br>
+          Input MIDI:<br>
+          <audio id="brahms_concerto_beethoven_concertos_MIDI" controls>
+          <source src="static/long_samples/beethoven_pastoral_5_coriolan_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("brahms_concerto_beethoven_concertos_MIDI");
+          audio.volume = 1.0;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/beethoven_pastoral_5_coriolan.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+      <div class="column">
+        <small><small>MIDI: <b>Gershwin Rhapsody in Blue</b>
+        <br>Performance Condition: <b>Mitsuko Uchida & Kurt Sanderling playing Beethoven Piano Concertos 1-4</b>
+        <br>
+        Input MIDI:<br>
+        <audio id="rhapsody_in_blue_2_beethoven_concertos" controls>
+        <source src="static/long_samples/rhapsody_in_blue_2_beethoven_concertos_midi.mp3", type="audio/mpeg">
+        </audio>
+        <script>
+        var audio = document.getElementById("rhapsody_in_blue_2_beethoven_concertos");
+        audio.volume = 0.5;
+        </script>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/long_samples/rhapsody_in_blue_2_beethoven_concertos.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
+      </div>
+
+
+
+
+
+      <div class="column">
+        <small><small>MIDI: <b>Mendelssohn Trio for Piano, Violin and Cello</b>
+        <br>Performance Condition: <b><span style="color:DarkSlateBlue">Trio Élégiaque playing Beethoven's Piano Trios</span></b>
+        <br>
+          Input MIDI:<br>
+          <audio id="mozart_piano_concerto_20_beethoven_piano_concertos" controls>
+          <source src="static/long_samples/mendelssohn_trio_3_beethoven_trios_midi.mp3", type="audio/mpeg">
+          </audio>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/mendelssohn_trio_3_beethoven_trios.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+      <div class="column">
+          <small><small>MIDI: <b>Ravel Bolero</b>
+          <br>Performance Condition: <b>Richard Bonynge & National Phil. Orchestra playing Tchaikovsky's Swan Lake</b>
+          <br>
+          Input MIDI:<br>
+          <audio id="bolero_swan_lake" controls>
+          <source src="static/long_samples/bolero_swan_lake_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("bolero_swan_lake");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/bolero_swan_lake.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+
+
+
+
+
+
+
+    </div>
+
+    <br>
+
+    <div class="columns is-centered">
+
+      <div class="column">
+        <small><small>MIDI: <b>Beethoven 5th Symphony Part 1</b>
+        <!-- <br>Performance Condition: <b><span style="color:Purple">Richard Bonynge & National Phil. Orchestra playing Tchaikovsky's Swan Lake</span></b> -->
+        <br>Performance Condition: <b><span style="color:MediumVioletRed">Czech Symphony Orchestra playing Beethoven's Coriolan Overture</span></b>
+        <br>
+        Input MIDI:<br>
+        <audio id="beethoven_5th_coriolan" controls>
+        <source src="static/long_samples/beethoven_5th_coriolan_midi.mp3", type="audio/mpeg">
+        </audio>
+        <script>
+        var audio = document.getElementById("beethoven_5th_coriolan");
+        audio.volume = 0.5;
+        </script>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/long_samples/beethoven_5th_coriolan.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
+
+      </div>
+
+      <div class="column">
+          <small><small>MIDI: <b>Beethoven Pastoral Symphony Part 4</b>
+          <!-- <br>Performance Condition: <b><span style="color:Indigo">Bach Sonatas for Violin & Harpsichord (unknown performer)</span></b> -->
+          <br>Performance Condition: <b><span style="color:MediumVioletRed">Czech Symphony Orchestra playing Beethoven's Coriolan Overture</span></b>
+          <br>
+          Input MIDI:<br>
+          <audio id="pastoral_4" controls>
+          <source src="static/long_samples/beethoven_pastoral_4_coriolan_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("pastoral_4");
+          audio.volume = 1.0;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/beethoven_pastoral_4_coriolan.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+
+      </div>
+
+
+
+      <div class="column">
+          <small><small>MIDI: <b>Mendelssohn Trio for Piano, Violin and Cello</b>
+          <br>Performance Condition: <b><span style="color:DarkSlateBlue">Trio Élégiaque playing Beethoven's Piano Trios</span></b>
+          <br>
+          Input MIDI:<br>
+          <audio id="bach_concerto2_harpsichord_violin_midi" controls>
+          <source src="static/long_samples/mendelssohn_trio_beethoven_trios_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("bach_concerto2_harpsichord_violin_midi");
+          audio.volume = 1.0;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/mendelssohn_trio_beethoven_trios.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="column">
+        <small><small>MIDI: <b>Mozart 40th Symphony Part 1</b>
+        <!-- <br>Performance Condition: <b><span style="color:Indigo">Czech Symphony Orchestra playing Beethoven's 3rd Symphony (Eroica)</span></b> -->
+        <br>Performance Condition: <b>Czech Symphony Orchestra playing Beethoven's 3rd Symphony (Eroica)</b>
+
+        <br>
+        Input MIDI:
+        <br>
+        <audio id="mozart_40_beethoven_eroica_midi" controls>
+        <source src="static/long_samples/mozart_40_beethoven_eroica_midi.mp3", type="audio/mpeg">
+        </audio>
+        <script>
+        var audio = document.getElementById("mozart_40_beethoven_eroica_midi");
+        audio.volume = 0.3;
+        </script>
+        <br>
+        Ours:
+        <br>
+        <audio controls>
+        <source src="static/long_samples/mozart_40_beethoven_eroica.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
+      </div>
+
+
+    </div>
+
+    <!-- <br> -->
+    <br>
+
+    <div class="columns is-centered">
+
+
+
+
+      <div class="column">
+          <small><small>MIDI: <b>Bach Mass in B Minor Part 11 (left-out)</b>
+          <br>Performance Condition: <b>Bach Mass in B Minor (unknown performer)</b>
+          <br>
+          Input MIDI:<br>
+          <audio id="brahms_concerto_1_1_beethoven_piano_concertos" controls>
+          <source src="static/long_samples/bach_mass_2_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("brahms_concerto_1_1_beethoven_piano_concertos");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/bach_mass_2.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+      <!-- <div class="column">
+          <small><small>MIDI: <b>Bach Mass in B Minor Part 11 (left-out)</b>
+          <br>Performance Condition: <b>Bach Mass in B Minor (unknown performer)</b>
+          <br>
+          Input MIDI:<br>
+          <audio id="brahms_concerto_1_1_beethoven_piano_concertos" controls>
+          <source src="static/long_samples/bach_mass_1_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("brahms_concerto_1_1_beethoven_piano_concertos");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/bach_mass_1.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div> -->
+
+      <div class="column">
+          <small><small>MIDI: <b>Bach Little Fugue</b>
+          <!-- <br>Performance Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b> -->
+          <br>Performance Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b>
+          <!-- <small><small>MIDI: <b>Mozart 40th Symphony Part 4</b> -->
+          <!-- <br>Performance Condition: <b><span style="color:SeaGreen">Ferenc Fricsay & Berlin Radio Orchestra playing Brahms' Haydn Variations</span></b> -->
+          <br>
+          Input MIDI:<br>
+          <audio id="brahms_concerto_1_1_beethoven_piano_concertos" controls>
+          <source src="static/long_samples/bach_little_fugue_2_johanssen_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("brahms_concerto_1_1_beethoven_piano_concertos");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/bach_little_fugue_2_johanssen.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+      <div class="column">
+          <small><small>MIDI: <b>Bach 2nd Haprsichord Concerto Part 1</b>
+          <br>Performance Condition: <b><span style="color:DarkGreen">Bach Sonatas for Violin & Harpsichord (unknown performer)</span></b>
+          <br>
+          Input MIDI:<br>
+          <audio id="bach_concerto2_harpsichord_violin_midi" controls>
+          <source src="static/long_samples/bach_concerto2_harpsichord_violin_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("bach_concerto2_harpsichord_violin_midi");
+          audio.volume = 1.0;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/bach_concerto2_harpsichord_violin.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+
+
+      <div class="column">
+          <small><small>MIDI: <b>Bach 7th Haprsichord Concerto Part 3</b>
+          <br>Performance Condition: <b><span style="color:DarkGreen">Bach Sonatas for Violin & Harpsichord (unknown performer)</span></b>
+          <!-- <small><small>MIDI: <b>Beethoven Piano Concerto 5</b>
+          <br>Performance Condition: <b><span style="color:MidnightBlue">Mitsuko Uchida & Kurt Sanderling playing Beethoven Piano Concertos 1-4</span></b> -->
+          <br>
+          Input MIDI:<br>
+          <audio id="bach_concerto7_3_harpsichord_violin" controls>
+          <source src="static/long_samples/bach_concerto7_3_harpsichord_violin_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("bach_concerto7_3_harpsichord_violin");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/bach_concerto7_3_harpsichord_violin.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+
+
+
+
+
+    </div>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("buttonDiv");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    // function myFunction() {
+    //         $("#buttonDiv").toggle();
+    //     }
+    }
+    </script>
+    <center>
+    <button onclick="myFunction()" style="height:56px;width:112px;
+                                          border-radius: 8px;
+                                          font-size:140%;
+                                          color: white;
+                                          /* padding: 15px 32px; */
+                                          margin: 2px 2px;
+                                          background-color:#4CAF50; /* Green */
+                                          border: none;
+                                          cursor: pointer;">
+    <!-- More<br>Samples -->
+    More
+    </button>
+    </center>
+    <div id="buttonDiv" style="display:none">
+    <!-- end button -->
+    <!-- </div> -->
+    <br>
+
+
+    <div class="columns is-centered">
+      <div class="column">
+        <small><small>MIDI: <b>Mozart 40th Symphony Part 3</b>
+        <!-- <br>Performance Condition: <b><span style="color:Maroon">Bach 3rd Orchestral Suite (unknown performer)</span></b> -->
+        <br>Performance Condition: <b>playing Brahms 3rd Symphony</b>
+        <br>
+        <br>
+        Input MIDI:<br>
+        <audio id="mozart_40_3_brahms_3_midi" controls>
+        <source src="static/long_samples/mozart_40_3_brahms_3_midi.mp3", type="audio/mpeg">
+        </audio>
+        <!-- <script>
+        var audio = document.getElementById("mozart_40_3_brahms_3_midi");
+        audio.volume = 0.5;
+        </script> -->
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/long_samples/mozart_40_3_brahms_3.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
+      </div>
+
+      <div class="column">
+          <small><small>MIDI: <b>Bach 2nd Partita</b>
+          <!-- <br>Performance Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b> -->
+          <br>Performance Condition: <b>Bach WTC II (unknown performer)</b>
+          <!-- <small><small>MIDI: <b>Mozart 40th Symphony Part 4</b> -->
+          <!-- <br>Performance Condition: <b><span style="color:SeaGreen">Ferenc Fricsay & Berlin Radio Orchestra playing Brahms' Haydn Variations</span></b> -->
+          <br>
+          Input MIDI:<br>
+          <audio id="brahms_concerto_1_1_beethoven_piano_concertos" controls>
+          <source src="static/long_samples/bach_partita_2_wtc2_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("brahms_concerto_1_1_beethoven_piano_concertos");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/bach_partita_2_wtc2.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+
+
+
+
+      <div class="column">
+          <small><small>MIDI: <b>Brahms 1st Piano Concerto Part 3</b>
+          <!-- <br>Performance Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b> -->
+          <br>Performance Condition: <b><span style="color:DarkMagenta">Mitsuko Uchida & Kurt Sanderling playing Beethoven Piano Concertos 1-4</span></b>
+          <!-- <small><small>MIDI: <b>Mozart 40th Symphony Part 4</b> -->
+          <!-- <br>Performance Condition: <b><span style="color:SeaGreen">Ferenc Fricsay & Berlin Radio Orchestra playing Brahms' Haydn Variations</span></b> -->
+          <br>
+          Input MIDI:<br>
+          <audio id="brahms_concerto_1_1_beethoven_piano_concertos" controls>
+          <source src="static/long_samples/brahms_concerto_1_1_beethoven_piano_concertos_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("brahms_concerto_1_1_beethoven_piano_concertos");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/brahms_concerto_1_1_beethoven_piano_concertos.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+
+
+      <!-- <div class="column">
+          <small><small>MIDI: <b>Mozart 20th Piano Concerto Part 1</b>
+          <br>Performance Condition: <b><span style="color:MidnightBlue">Mitsuko Uchida & Kurt Sanderling playing Beethoven Piano Concertos 1-4</span></b>
+
+
+          <br>
+          Input MIDI:<br>
+          <audio id="mozart_piano_concerto_20_beethoven_piano_concertos" controls>
+          <source src="static/long_samples/mozart_piano_concerto_20_beethoven_piano_concertos_midi.mp3", type="audio/mpeg">
+          </audio>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/mozart_piano_concerto_20_beethoven_piano_concertos.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div> -->
+
+
+
+      <div class="column">
+          <small><small>MIDI: <b>Brahms 1st Piano Concerto Part 1</b>
+          <!-- <br>Performance Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b> -->
+          <br>Performance Condition: <b><span style="color:DarkMagenta">Mitsuko Uchida & Kurt Sanderling playing Beethoven Piano Concertos 1-4</span></b>
+          <br>
+          Input MIDI:<br>
+          <audio id="brahms_concerto_1_3_beethoven_piano_concertos" controls>
+          <source src="static/long_samples/brahms_concerto_1_3_beethoven_piano_concertos_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("brahms_concerto_1_3_beethoven_piano_concertos");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/long_samples/brahms_concerto_1_3_beethoven_piano_concertos.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+
+    </div>
+
+    <!-- end button -->
+    </div>
+
+  <br><br>
+
+  <h2 class="title is-3">Performance Conditioning with Pitch-Only Input</h2>
+  <p>
+  In the following, we demonstrate the effect of performance conditioning in a slightly different scenario.
+  <br>
+  The exact same MIDI with pitch-only information (without instrumentation) is synthesized with different performance conditions.
+  <br>
+  For each sample, we provide a segment from the conditioning performance (upper), and our generated sample (lower).
+  <br>
+  For a fair comparison, <b>all segments from the conditioning performances are vocoded</b> with the Soundstream vocoder, also used for our generated samples.
+  </p>
+  <br>
+
+  <b>Bach's 7th Harpsichord Concerto</b><br>
+  <small><small>
+  Input MIDI:
+  <br>
+  <audio controls>
+  <source src="static/performance_conditioning/concerto7_midi.mp3", type="audio/mpeg">
+  </audio>
+  <!-- </small></small> -->
+  <br>
+  <div class="columns is-centered">
+    <!-- <small><small> -->
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/mozart_figaro.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/concerto7_figaro.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="column">
+        Performance Condition:
+        <br>
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/bach_english.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/concerto7_english.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+
+
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/bwv1005.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/concerto7_bwv1005.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/beethoven_trios.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/concerto7_trios.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+    </div>
+
+
+  </div>
+
+  <br>
+
+  </small></small>
+  <br>
+
+
+
+  <b>Mozarts's 40th Symphony</b><br>
+  <small><small>
+  Input MIDI:
+  <br>
+  <audio controls>
+  <source src="static/performance_conditioning/mozart_550_midi.mp3", type="audio/mpeg">
+  </audio>
+  <!-- </small></small> -->
+  <br>
+  <div class="columns is-centered">
+    <!-- <small><small> -->
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/bwv1003.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/mozart_550_bwv1003.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="column">
+        Performance Condition:
+        <br>
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/sor_6_etude6.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/mozart_550_sor_6.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/swan_lake.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/mozart_550_swan_lake_4.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/beethoven_trios.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/mozart_550_trios.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+    </div>
+
+
+  </div>
+
+  <br>
+
+  </small></small>
+  <br>
+
+  <b>Bach's Mass in B Minor</b><br>
+  In the last 2 examples, the timbre of the harpsichord is extracted from a mixture with a violin.
+  <br><br>
+  <small><small>
+  Input MIDI:
+  <br>
+  <audio controls>
+  <source src="static/performance_conditioning/mass_midi.mp3", type="audio/mpeg">
+  </audio>
+  <!-- </small></small> -->
+  <br>
+  <div class="columns is-centered">
+    <!-- <small><small> -->
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/cambini.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/mass_cambini.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="column">
+        Performance Condition:
+        <br>
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/mozart_magic_flute.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/mass_magic_flute.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+
+
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/bwv1002.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/mass_bwv1002.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/sor_29_etude6.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/mass_sor_29_22.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+    </div>
+
+
+  </div>
+
+  <br>
+
+  </small></small>
+  <br>
+
+  <b>Mozart's 15th String Quartet</b><br>
+  <small><small>
+  Input MIDI:
+  <br>
+  <audio controls>
+  <source src="static/performance_conditioning/mozart_string_midi.mp3", type="audio/mpeg">
+  </audio>
+  <!-- </small></small> -->
+  <br>
+  <div class="columns is-centered">
+    <!-- <small><small> -->
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/bwv1002.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/mozart_string_bwv1002.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="column">
+        Performance Condition:
+        <br>
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/beethoven_violin_sonatas.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/mozart_string_violin_sonatas.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+
+
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/cambini.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/mozart_string_cambini.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/sor_mozart_variations.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/mozart_string_john_williams.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+    </div>
+
+
+  </div>
+
+  <br>
+
+  </small></small>
+  <br>
+
+
+
+
+
+  <b>Bach's 4th Orchestral Suite (Bouree)</b><br>
+  <small><small>
+  Input MIDI:
+  <br>
+  <audio controls>
+  <source src="static/performance_conditioning/bouree_midi.mp3", type="audio/mpeg">
+  </audio>
+  <!-- </small></small> -->
+  <br>
+  <div class="columns is-centered">
+    <!-- <small><small> -->
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/bach_harpsichord_violin.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/bouree_harpsichord_violin.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/bwv530.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/bouree_bwv530.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+    </div>
+
+
+    <div class="column">
+        Performance Condition:
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/sor_35_13.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/bouree_sor_35_13.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+
+
+    <div class="column">
+        Performance Condition:
+        <br>
+        <audio controls>
+        <source src="static/performance_conditioning/conditions/beethoven_violin_sonatas.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/performance_conditioning/bouree_violin_sonatas.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+  </div>
+
+  <br>
+
+  </small></small>
+  <br>
+
+
+</div>
+
+<section class="section">
+  <div class="container is-widescreen">
+    <h2 class="title is-3">Pop, Rock, and Jazz Music</h2>
+    In this section we provide samples of performances generated by a synthesizer trained on rock and pop music albums. For note conditions, we used predicted transcriptions of an existing transcriber. <b>In the model used in this section, all training performances are unknown to the transcriber.</b> The transcriber was trained mainly on rock albums, with unalinged MIDIs, following <a href="https://benadar293.github.io">Maman and Bermano, 2022</a>. However, <b>instrumentation in MIDIs of pop and rock music is extremely prone to inaccuracies and incosistencies</b>, and we therefore rely on the synthesizer's generative power, and on performance conditioning, to produce likely instrumentation. Improving instrument disentanglement in such genres is an important direction for future work, and we believe improved transcription will enable more control in the generation process.
+    <br>
+    <!-- <br> -->
+    <!-- <b>In the model used in this section, all training performances are unknown to the transcriber.</b> -->
+    <br>
+    Note the ability of the model to <b>generate drums</b>, as the MIDI input contains only pitch and instrument (without drums).
+    <br>
+    The model can generate human voice, but it is <b>not conditioned on lyrics</b> - this is important future work.
+    <br><br>
+
+    <div class="columns is-centered">
+      <div class="column">
+          <small><small>MIDI: <b>Beegees, More Than A Woman</b>
+          <br>Performance Condition: <b><span style="color:ForestGreen">Guns N' Roses, Appetite for Destruction</span></b>
+          <br>
+          Input MIDI:<br>
+          <audio id="more_than_a_woman_guns_n_roses" controls>
+          <source src="static/rock_pop/more_than_a_woman_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("more_than_a_woman_guns_n_roses");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/rock_pop/more_than_a_woman_guns_n_roses.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+      <div class="column">
+        <small><small>MIDI: <b>Beatles, Let It Be</b>
+        <br>Performance Condition: <b><span style="color:ForestGreen">Guns N' Roses, Appetite for Destruction</span></b>
+        <br>
+        Input MIDI:
+        <br>
+        <audio controls>
+        <source src="static/rock_pop/let_it_be_guns_midi.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Ours:
+        <br>
+        <audio controls>
+        <source src="static/rock_pop/let_it_be_guns_n_roses.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
+      </div>
+
+
+      <!-- <div class="column">
+          <small><small>MIDI: <b><span style="color:MediumVioletRed">Britney Spears, One More Time</span></b>
+          <br>Performance Condition: <b>ABBA, Supertrooper</b>
+          <br><br>
+          Input MIDI:<br>
+          <audio id="baby_one_more_time_abba" controls>
+          <source src="static/rock_pop/baby_one_more_time_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("baby_one_more_time_abba");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/rock_pop/baby_one_more_time_abba.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div> -->
+
+
+
+      <div class="column">
+          <small><small>MIDI: <b>Beatles, Martha My Dear</b>
+          <br>Performance Condition: <b><span style="color:MediumVioletRed">Dave Brubeck, Time Out</span></b>
+          <br><br>
+          Input MIDI:<br>
+          <audio id="martha_brubeck" controls>
+          <source src="static/rock_pop/martha_my_dear_brubeck_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("martha_brubeck");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/rock_pop/martha_my_dear_brubeck.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+      <div class="column">
+          <!-- <small><small>MIDI: <b><span style="color:MediumVioletRed">Beatles, Let It Be</span></b> -->
+          <small><small>MIDI: <b>Eric Clapton, I Shot The Sheriff</b>
+            <br>Performance Condition: <b><span style="color:MediumVioletRed">Dave Brubeck, Time Out</span></b>
+          <br><br>
+          Input MIDI:<br>
+          <audio id="baby_one_more_time_abba" controls>
+          <source src="static/rock_pop/i_shot_the_sheriff_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("baby_one_more_time_abba");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/rock_pop/i_shot_the_sheriff_dave_brubeck.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+
+
+      <!-- <div class="column">
+          <small><small>MIDI: <b><span style="color:MediumVioletRed">Britney Spears, One More Time</span></b>
+          <br>Performance Condition: <b>Dick Schory, Music for Bang, Baroom, and Harp</b>
+          <br>
+          Input MIDI:<br>
+          <audio id="one_more_time_baroom" controls>
+          <source src="static/rock_pop/baby_one_more_time_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("one_more_time_baroom");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/rock_pop/baby_one_more_time_bang_baroom.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div> -->
+
+
+
+
+    </div>
+
+    <br>
+
+    <div class="columns is-centered">
+
+
+
+      <div class="column">
+        <small><small>MIDI: <b>Doors, Hello I Love You</b>
+        <!-- <br>Performance Condition: <b><span style="color:Purple">Richard Bonynge & National Phil. Orchestra playing Tchaikovsky's Swan Lake</span></b> -->
+        <br>Performance Condition: <b>Metallica, Master of Puppets</b>
+        <br><br>
+        Input MIDI:<br>
+        <audio id="hello" controls>
+        <source src="static/rock_pop/hello_i_love_you_midi.mp3", type="audio/mpeg">
+        </audio>
+        <script>
+        var audio = document.getElementById("hello");
+        audio.volume = 0.5;
+        </script>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/rock_pop/hello_i_love_you_metallica.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
+
+      </div>
+
+      <div class="column">
+          <!-- <small><small>MIDI: <b><span style="color:MediumVioletRed">Beatles, Let It Be</span></b> -->
+          <small><small>MIDI: <b>Beatles, Let It Be</b>
+          <br>Performance Condition: <b>Queen, A Night at The Opera</b>
+          <br><br>
+          Input MIDI:<br>
+          <audio id="baby_one_more_time_abba" controls>
+          <source src="static/rock_pop/let_it_be_queen_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("baby_one_more_time_abba");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/rock_pop/let_it_be_queen.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+
+      <!-- <div class="column">
+        <small><small>MIDI: <b>Eric Clapton, Layla</b>
+        <br>Performance Condition: <b><span style="color:MediumVioletRed">Metallica, Master of Puppets</span></b>
+        <br><br>
+        Input MIDI:<br>
+        <audio id="hello" controls>
+        <source src="static/rock_pop/layla_midi.mp3", type="audio/mpeg">
+        </audio>
+        <script>
+        var audio = document.getElementById("hello");
+        audio.volume = 0.5;
+        </script>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/rock_pop/layla_metallica.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
+
+      </div> -->
+
+      <div class="column">
+          <small><small>MIDI: <b>Frank Zappa, Dancin' Fool</b>
+          <br>Performance Condition: <b>Daft Punk, Random Access Memories</b>
+          <br>
+          Input MIDI:<br>
+          <audio id="dancin_fool" controls>
+          <source src="static/rock_pop/dancin_fool_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("dancin_fool");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/rock_pop/dancin_fool_daft_punk.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+
+      </div>
+
+      <div class="column">
+          <small><small>MIDI: <b>Depeche Mode, People Are People</b>
+          <br>Performance Condition: <b>Yes, Close to The Edge</b>
+          <br><br>
+          Input MIDI:<br>
+          <audio id="people" controls>
+          <source src="static/rock_pop/people_are_people_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("people");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/rock_pop/people_are_people_yes.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div>
+
+      <!-- <div class="column">
+          <small><small>MIDI: <b>Beatles, Martha My Dear</b>
+          <br>Performance Condition: <b>Beatles, Abbey Road</b>
+          <br><br>
+          Input MIDI:<br>
+          <audio id="one_more_time_baroom" controls>
+          <source src="static/rock_pop/martha_my_dear_beatles_midi.mp3", type="audio/mpeg">
+          </audio>
+          <script>
+          var audio = document.getElementById("one_more_time_baroom");
+          audio.volume = 0.5;
+          </script>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/rock_pop/martha_my_dear_beatles.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div> -->
+
+
+
+
+      <!-- <div class="column">
+        <small><small>MIDI: <b>Beatles, Martha My Dear</b>
+        <br>Performance Condition: <b>Beatles, Abbey Road</b>
+        <br><br>
+        Input MIDI:<br>
+        <audio id="brahms_hungarian_dance_beethoven_piano_trios_MIDI" controls>
+        <source src="static/rock_pop/martha_my_dear_beatles_midi.mp3", type="audio/mpeg">
+        </audio>
+        <script>
+        var audio = document.getElementById("brahms_hungarian_dance_beethoven_piano_trios_MIDI");
+        audio.volume = 0.5;
+        </script>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/rock_pop/martha_my_dear_beatles.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
+      </div> -->
+
+
+
+
+      <!-- <div class="column">
+        <small><small>MIDI: <b>Eric Clapton, Layla</b>
+        <br>Performance Condition: <b><span style="color:OrangeRed">Metallica, Master of Puppets</span></b>
+        <br><br>
+        Input MIDI:<br>
+        <audio controls>
+        <source src="static/rock_pop/layla_midi.mp3", type="audio/mpeg">
+        </audio>
+        <br>Ours:<br>
+        <audio controls>
+        <source src="static/rock_pop/layla_metallica.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
+      </div> -->
+
+      <!-- <div class="column">
+        <small><small>MIDI: <b>Beatles, Let It Be</b>
+        <br>Performance Condition: <b><span style="color:ForestGreen">Guns N' Roses, Appetite for Destruction</span></b>
+        <br>
+        Input MIDI:
+        <br>
+        <audio controls>
+        <source src="static/rock_pop/let_it_be_guns_midi.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Ours:
+        <br>
+        <audio controls>
+        <source src="static/rock_pop/let_it_be_guns_n_roses.mp3", type="audio/mpeg">
+        </audio>
+        </small></small>
+      </div> -->
+
+      <!-- <div class="column">
+          <small><small>MIDI: <b>Beatles, Let It Be</b>
+          <br>Performance Condition: <b>Queen, A Night at The Opera</b>
+          <br><br>
+          Input MIDI:<br>
+          <audio id="mozart_symphony40_p4_brahms_haydn_variations_MIDI" controls>
+          <source src="static/rock_pop/let_it_be_queen_midi.mp3", type="audio/mpeg">
+          </audio>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/rock_pop/let_it_be_queen.mp3", type="audio/mpeg">
+          </audio>
+          </small></small>
+      </div> -->
+    </div>
+
+    <!-- <br> -->
+    <br>
+
+    <h2 class="title is-3">Performance Conditioning Effect in Pop, Rock, and Jazz Music</h2>
+    <p>
+    In this section, we demonstrate the effect of performance conditioning in genres such as pop, rock, and jazz music. Each performance condition corresponds to an album.
+    </p>
+    <br>
+
+    <b>Britney Spears, One More Time</b><br>
+    In this example, Britney Spears' One More Time is generated in two styles: ABBA's Super Trouper album, and Dick Schory's Music For Bang, Baaroom and Harp, which comprises mainly pitched percussion instruments.
+    <br>
+    <small><small>
+    Input MIDI:<br>
+    <audio id="baby_one_more_time_abba" controls>
+    <source src="static/rock_pop/baby_one_more_time_midi.mp3", type="audio/mpeg">
+    </audio>
+    <script>
+    var audio = document.getElementById("baby_one_more_time_abba");
+    audio.volume = 0.5;
+    </script>
+    <div class="columns is-centered">
+      <div class="column is-one-quarter">
+          Performance Condition: </small></small><a href="https://www.youtube.com/watch?v=cBjAZvpJDQs&list=PLI6kLIhBBwmQxgm5qbckYpm24GVKQ6Q7R"> ABBA, Super Trouper</a><small><small>
+          <br>
+          <!-- <audio controls>
+          <source src="static/rock_pop/something.mp3", type="audio/mpeg">
+          </audio> -->
+          <br>
+
+          <!-- Ours:<br> -->
+          <audio controls>
+          <source src="static/rock_pop/baby_one_more_time_abba.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column is-one-quarter">
+          Performance Condition: </small></small><a href="https://www.youtube.com/watch?v=J0I86j1UFic&list=PL7lQodAyoMUBN0ysAktYTAMiwy3WfnpCo">Music For Bang, Baaroom and Harp</a><small><small>
+          <!-- <audio controls>
+          <source src="static/performance_conditioning/organ_5251_vocoded.mp3", type="audio/mpeg">
+          </audio> -->
+          <br>
+          <!-- Ours:<br> -->
+          <audio controls>
+          <source src="static/rock_pop/baby_one_more_time_bang_baroom.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+    </div>
+    </small></small>
+    <br>
+
+    <b>Beatles, Let It Be</b><br>
+    In this example, The Beatles' Let It Be is generated in the styles of two different rock albums. Notice the significant difference in the sound of the guitar.
+    <br>
+    <small><small>
+    Input MIDI:
+    <br>
+    <audio controls>
+    <source src="static/rock_pop/let_it_be_queen_midi.mp3", type="audio/mpeg">
+    </audio>
+    <br>
+    <div class="columns is-centered">
+      <div class="column is-one-quarter">
+          Performance Condition: </small></small><a href="https://www.youtube.com/watch?v=0CNPR2qNzxk&list=PL6ogdCG3tAWiPhX1-iTHcvnsO2ek1nlJl">Guns N' Roses, Appetite for Destruction</a><small><small>
+          <!-- <audio controls>
+          <source src="static/performance_conditioning/organ_5253_vocoded.mp3", type="audio/mpeg">
+          </audio> -->
+          <br>
+          <!-- Ours:<br> -->
+          <audio controls>
+          <source src="static/rock_pop/let_it_be_guns_n_roses_2.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column is-one-quarter">
+          Performance Condition: </small></small><a href="https://www.youtube.com/watch?v=81t8mi5i0X0&list=PLBnJv6rImVe9XXPLwK2CvysVd_CnrYB81">Queen, A Night at The Opera</a><small><small>
+          <!-- <audio controls>
+          <source src="static/performance_conditioning/organ_5251_vocoded.mp3", type="audio/mpeg">
+          </audio> -->
+          <br>
+          <!-- Ours:<br> -->
+          <audio controls>
+          <source src="static/rock_pop/let_it_be_queen.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+    </div>
+    </small></small>
+    <br>
+
+    <h2 class="title is-3">Comparison</h2>
+    <p>
+    Our main comparison is with Hawthorne et al. (2022). Although we use the same T5 backbone, there are 2 main differences between the models:
+    <br>
+    (1) Data - We train on real data alone (~58 hours), including orchestral symphonies, while Hawthorne et al. train on mainly synthetic data (~1500 hours).
+    <br>
+    (2) We incorporate performance conditioning.
+    </p>
+    For qualitative comparison with Hawthorne et al. (2022), see our <a href="https://benadar293.github.io/midipm">ICASSP 2024 paper's project page</a>.
+    <br>
+    <br>
+
+
+    <h2 class="title is-3">Vocoder Quality</h2>
+    <p>
+    The Soundstream vocoder's quality is an upper bound on the quality of our generated performances.
+    <br>
+    For examples demonstrating the vocoder's quality, see our <a href="https://benadar293.github.io/midipm">ICASSP 2024 paper's project page</a>..
+    <br>
+
+    <br>
+  </div>
+</section>
+
+
+
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <!-- <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer> -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://proceedings.mlr.press/v162/maman22a.html">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <!-- <a class="icon-link" href="https://github.com/benadar293/benadar293.github.io" class="external-link" disabled> -->
+      <a class="icon-link" href="my_repo" class="external-link" disabled>
+
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            © Ben Maman (Tel Aviv University) and Amit Bermano (Tel Aviv University) 2023.
+
+            This project is licensed under the Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license. This means you can share and adapt under the following conditions:
+<br>
+            1) Attribution - give appropriate credit to the authors.
+<br>
+            2) Non-commercial use only.
+<br>
+            3) ShareAlike — you must distribute your contributions under the same license as the original.
+
+<br>
+</footer>
+
+<!-- Statcounter tracking code -->
+
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
