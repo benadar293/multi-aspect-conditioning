@@ -1,5 +1,5 @@
-# Performance Conditioning for Diffusion-Based Multi-Instrument Synthesis
-[Project Page](https://benadar293.github.io/performance-conditioning) for our paper: Maman et al., "Dual Performance-Transcription Conditioning for Diffusion-Based Multi-Instrument Synthesis", 2024
+# Multi-Aspect Conditioning for Diffusion-Based Music Synthesis: Enhancing Realism and Control
+[Project Page](https://benadar293.github.io/multi-aspect-conditioning) for our paper: Maman et al., "Multi-Aspect Conditioning for Diffusion-Based Music Synthesis: Enhancing Realism and Control", 2024
 
 ![alt text](static/images/overview.PNG "Overview")
 
