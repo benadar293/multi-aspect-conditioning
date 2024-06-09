@@ -1,7 +1,7 @@
 # Multi-Aspect Conditioning for Diffusion-Based Music Synthesis: Enhancing Realism and Control
 [Project Page](https://benadar293.github.io/multi-aspect-conditioning) for our paper: Maman et al., "Multi-Aspect Conditioning for Diffusion-Based Music Synthesis: Enhancing Realism and Control", 2024
 
-![alt text](static/images/overview_figure.pdf "Overview")
+![alt text](static/images/overview_figure.png "Overview")
 
 ## Acknowledgments
 Parts of this project page were adopted from the [Nerfies](https://nerfies.github.io/) page.
