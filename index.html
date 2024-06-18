@@ -106,17 +106,7 @@
                     </a>
                   </span>
 
-                    <!-- <span class="link-block">
-                      <a href="static/pdfs/DatasetDistribution.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Data Distribution</span>
-                    </a>
-                  </span> -->
 
-                  <!-- Github link -->
                   <span class="link-block">
                     <a href="https://github.com/benadar293/multi-aspect-conditioning" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
@@ -145,10 +135,6 @@
   </div>
 </section>
 
-<!-- <section class="section"> -->
-  <!-- <div class="container is-widescreen"> -->
-
-    <!-- Abstract. -->
   <div class="columns is-centered has-text-centered">
     <div class="column is-four-fifths">
       <h2 class="title is-3">Abstract</h2>
@@ -165,15 +151,7 @@
       </div>
     </div>
   </div>
-  <!--/ Abstract. -->
 
-<!-- </section> -->
-  <!-- <br> -->
-  <!-- <div class="item">
-    <div style="width: 100%; height: 100%">
-      <center><img src="static/images/overview.PNG" width="55%" height="55%"></center>
-    </div>
-  </div> -->
   <section class="section">
   <div class="container is-widescreen">
     <h2 class="title is-3" id="contents">Contents</h2>
@@ -182,14 +160,13 @@
     <li><a href="#section_transcription_condition">Samples from transcription-conditioned model</a></li>
     <li><a href="#section_pitch_only">Version Conditioning with pitch-only input</li>
     <li><a href="#section_instances">Version Conditioning for different instances of the same instruments</li>
-    <li><a href="#section_pop_rock_jazz">Pop, rock, and jazz music with zero-shot transcription-conditioning</li>
     <li><a href="#section_comparison">Comparison to Hawthorne et al.</li>
+    <li><a href="#section_pop_rock_jazz">Pop, rock, and jazz music with zero-shot transcription-conditioning</li>
     <li><a href="#vocoder">Vocoder Quality</a></li>
     </ul>
     <br>
 
     <h2 class="title is-3">Improvements</h2>
-    <!-- <h2 class="title is-3" id="section_transcription_condition">Synthesized Samples (Transcription-Conditioned Model)</h2> -->
     This work complements and expands our <a href="https://benadar293.github.io/midipm">ICASSP 2024 paper</a>. There are 3 significant improvements in this work:
     <ul style="list-style-type:disc;padding-left:40px">
     <li>We perform extensive listening tests, evaluating both realism, and similarity to the target version.</li>
@@ -366,7 +343,6 @@
       </div>
     </div>
 
-    <!-- <br> -->
     <br>
 
     <script>
@@ -377,9 +353,6 @@
       } else {
         x.style.display = "none";
       }
-    // function myFunction() {
-    //         $("#buttonDiv").toggle();
-    //     }
     }
     </script>
     <center>
@@ -392,7 +365,6 @@
                                           background-color:#4CAF50; /* Green */
                                           border: none;
                                           cursor: pointer;">
-    <!-- More<br>Samples -->
     More
     </button>
     </center>
@@ -460,7 +432,6 @@
 
       <div class="column">
         <small><small>MIDI: <b>Grieg Peer Gynt Part 1</b>
-        <!-- <br>Version Condition: <b><span style="color:Purple">Richard Bonynge & National Phil. Orchestra playing Tchaikovsky's Swan Lake</span></b> -->
         <br>Version Condition: <b>Richard Bonynge & National Phil. Orchestra playing Tchaikovsky's Swan Lake</b>
         <br>
         Input MIDI:<br>
@@ -484,7 +455,6 @@
 
 
     <!-- end button -->
-    <!-- </div> -->
     <br>
 
 
@@ -567,7 +537,6 @@
     <!-- end button -->
     </div>
     <br>
-    <!-- end alignment-conditioned -->
 
     <h2 class="title is-3" id="section_transcription_condition">Synthesized Samples (Transcription-Conditioned Model)<a href="#contents"><small><small><small><small>&nbsp;&nbsp;&nbsp;&nbsp;[Go to top]</small></small></small></small></a></h2>
     We provide generated samples of diverse instruments and ensembles, using different Version Conditions. Orchestral sound is obtained by simply using the 'Orchestra' instrument in the input MIDI, and does not require many violin channels.
@@ -578,10 +547,6 @@
     See next sections for a demonstration of the Version Conditioning effect, and for a comparison with Hawthorne et al.
     <br>
 
-    <!-- All generated samples in this page were generated with the same T5 model from the paper, and vocoded with Soundstream. -->
-    <!-- <br> -->
-    <!-- Contrary to the model in our <a href="https://benadar293.github.io/midipm">ICASSP 2024 paper</a>, this model was trained with note conditions obtained from predictions of an automatic transcriber, -->
-    <!-- rather than alignments. -->
     <br><br>
     <div class="columns is-centered">
 
@@ -623,7 +588,6 @@
 
       <div class="column">
         <small><small>MIDI: <b>Beethoven 5th Symphony Part 1</b>
-        <!-- <br>Version Condition: <b><span style="color:Purple">Richard Bonynge & National Phil. Orchestra playing Tchaikovsky's Swan Lake</span></b> -->
         <br>Version Condition: <b><span style="color:MediumVioletRed">Czech Symphony Orchestra playing Beethoven's Coriolan Overture</span></b>
         <br>
         Input MIDI:<br>
@@ -644,19 +608,9 @@
 
 
 
-
-
-
-
-
-
-
       <div class="column">
           <small><small>MIDI: <b>Bach Little Fugue</b>
-          <!-- <br>Version Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b> -->
           <br>Version Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b>
-          <!-- <small><small>MIDI: <b>Mozart 40th Symphony Part 4</b> -->
-          <!-- <br>Version Condition: <b><span style="color:SeaGreen">Ferenc Fricsay & Berlin Radio Orchestra playing Brahms' Haydn Variations</span></b> -->
           <br>
           Input MIDI:<br>
           <audio id="brahms_concerto_1_1_beethoven_piano_concertos" controls>
@@ -672,13 +626,6 @@
           </audio>
           </small></small>
       </div>
-
-
-
-
-
-
-
 
     </div>
 
@@ -708,7 +655,6 @@
 
       <div class="column">
         <small><small>MIDI: <b>Mozart 40th Symphony Part 1</b>
-        <!-- <br>Version Condition: <b><span style="color:Indigo">Czech Symphony Orchestra playing Beethoven's 3rd Symphony (Eroica)</span></b> -->
         <br>Version Condition: <b>Czech Symphony Orchestra playing Beethoven's 3rd Symphony (Eroica)</b>
 
         <br>
@@ -732,7 +678,6 @@
 
       <div class="column">
           <small><small>MIDI: <b>Beethoven Pastoral Symphony Part 4</b>
-          <!-- <br>Version Condition: <b><span style="color:Indigo">Bach Sonatas for Violin & Harpsichord (unknown performer)</span></b> -->
           <br>Version Condition: <b><span style="color:MediumVioletRed">Czech Symphony Orchestra playing Beethoven's Coriolan Overture</span></b>
           <br>
           Input MIDI:<br>
@@ -769,30 +714,7 @@
           </audio>
           </small></small>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
-
-    <!-- <br> -->
     <br>
 
     <script>
@@ -803,9 +725,6 @@
       } else {
         x.style.display = "none";
       }
-    // function myFunction() {
-    //         $("#buttonDiv").toggle();
-    //     }
     }
     </script>
     <center>
@@ -818,40 +737,12 @@
                                           background-color:#4CAF50; /* Green */
                                           border: none;
                                           cursor: pointer;">
-    <!-- More<br>Samples -->
     More
     </button>
     </center>
     <div id="buttonDiv_transcription" style="display:none">
     <br><br>
     <div class="columns is-centered">
-
-
-
-
-
-
-
-
-      <!-- <div class="column">
-          <small><small>MIDI: <b>Bach Mass in B Minor Part 11 (left-out)</b>
-          <br>Version Condition: <b>Bach Mass in B Minor (unknown performer)</b>
-          <br>
-          Input MIDI:<br>
-          <audio id="brahms_concerto_1_1_beethoven_piano_concertos" controls>
-          <source src="static/long_samples_transcription/bach_mass_1_midi.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("brahms_concerto_1_1_beethoven_piano_concertos");
-          audio.volume = 0.5;
-          </script>
-          <br>Ours:<br>
-          <audio controls>
-          <source src="static/long_samples_transcription/bach_mass_1.mp3", type="audio/mpeg">
-          </audio>
-          </small></small>
-      </div> -->
-
 
 
       <div class="column">
@@ -878,8 +769,6 @@
       <div class="column">
           <small><small>MIDI: <b>Bach 7th Haprsichord Concerto Part 3</b>
           <br>Version Condition: <b><span style="color:Indigo">Bach Sonatas for Violin & Harpsichord (unknown performer)</span></b>
-          <!-- <small><small>MIDI: <b>Beethoven Piano Concerto 5</b>
-          <br>Version Condition: <b><span style="color:MidnightBlue">Mitsuko Uchida & Kurt Sanderling playing Beethoven Piano Concertos 1-4</span></b> -->
           <br>
           Input MIDI:<br>
           <audio id="bach_concerto7_3_harpsichord_violin" controls>
@@ -897,11 +786,8 @@
       </div>
 
       <div class="column">
-          <!-- <h2 class="title is-7">Brahms Piano Concerto 1, Style: Mitsuko Uchida Playing Beethoven Piano Concertos</h2> -->
           <small><small>MIDI: <b>Beethoven Pastoral Symphony Part 5</b>
-          <!-- <br>Version Condition: <b><span style="color:MidnightBlue">Czech Symphony Orchestra playing Beethoven's Coriolan Overture</span></b> -->
           <br>Version Condition: <b><span style="color:MediumVioletRed">Czech Symphony Orchestra playing Beethoven's Coriolan Overture</span></b>
-
           <br>
           Input MIDI:<br>
           <audio id="brahms_concerto_beethoven_concertos_MIDI" controls>
@@ -937,23 +823,14 @@
           </small></small>
       </div>
 
-
-
-
-
-
     </div>
-
-
     <!-- end button -->
-    <!-- </div> -->
     <br>
 
 
     <div class="columns is-centered">
       <div class="column">
         <small><small>MIDI: <b>Mozart 40th Symphony Part 3</b>
-        <!-- <br>Version Condition: <b><span style="color:Maroon">Bach 3rd Orchestral Suite (unknown performer)</span></b> -->
         <br>Version Condition: <b>playing Brahms 3rd Symphony</b>
         <br>
         <br>
@@ -961,10 +838,6 @@
         <audio id="mozart_40_3_brahms_3_midi" controls>
         <source src="static/long_samples_transcription/mozart_40_3_brahms_3_midi.mp3", type="audio/mpeg">
         </audio>
-        <!-- <script>
-        var audio = document.getElementById("mozart_40_3_brahms_3_midi");
-        audio.volume = 0.5;
-        </script> -->
         <br>Ours:<br>
         <audio controls>
         <source src="static/long_samples_transcription/mozart_40_3_brahms_3.mp3", type="audio/mpeg">
@@ -974,10 +847,7 @@
 
       <div class="column">
           <small><small>MIDI: <b>Bach 2nd Partita</b>
-          <!-- <br>Version Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b> -->
           <br>Version Condition: <b>Bach WTC II (unknown performer)</b>
-          <!-- <small><small>MIDI: <b>Mozart 40th Symphony Part 4</b> -->
-          <!-- <br>Version Condition: <b><span style="color:SeaGreen">Ferenc Fricsay & Berlin Radio Orchestra playing Brahms' Haydn Variations</span></b> -->
           <br><br>
           Input MIDI:<br>
           <audio id="brahms_concerto_1_1_beethoven_piano_concertos" controls>
@@ -1000,10 +870,7 @@
 
       <div class="column">
           <small><small>MIDI: <b>Brahms 1st Piano Concerto Part 3</b>
-          <!-- <br>Version Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b> -->
           <br>Version Condition: <b><span style="color:MidnightBlue">Mitsuko Uchida & Kurt Sanderling playing Beethoven Piano Concertos 1-4</span></b>
-          <!-- <small><small>MIDI: <b>Mozart 40th Symphony Part 4</b> -->
-          <!-- <br>Version Condition: <b><span style="color:SeaGreen">Ferenc Fricsay & Berlin Radio Orchestra playing Brahms' Haydn Variations</span></b> -->
           <br>
           Input MIDI:<br>
           <audio id="brahms_concerto_1_1_beethoven_piano_concertos" controls>
@@ -1021,29 +888,8 @@
       </div>
 
 
-
-      <!-- <div class="column">
-          <small><small>MIDI: <b>Mozart 20th Piano Concerto Part 1</b>
-          <br>Version Condition: <b><span style="color:MidnightBlue">Mitsuko Uchida & Kurt Sanderling playing Beethoven Piano Concertos 1-4</span></b>
-
-
-          <br>
-          Input MIDI:<br>
-          <audio id="mozart_piano_concerto_20_beethoven_piano_concertos" controls>
-          <source src="static/long_samples_transcription/mozart_piano_concerto_20_beethoven_piano_concertos_midi.mp3", type="audio/mpeg">
-          </audio>
-          <br>Ours:<br>
-          <audio controls>
-          <source src="static/long_samples_transcription/mozart_piano_concerto_20_beethoven_piano_concertos.mp3", type="audio/mpeg">
-          </audio>
-          </small></small>
-      </div> -->
-
-
-
       <div class="column">
           <small><small>MIDI: <b>Brahms 1st Piano Concerto Part 1</b>
-          <!-- <br>Version Condition: <b>Kay Johannsen playing Bach's Organ Trio Sonatas</b> -->
           <br>Version Condition: <b><span style="color:MidnightBlue">Mitsuko Uchida & Kurt Sanderling playing Beethoven Piano Concertos 1-4</span></b>
           <br>
           Input MIDI:<br>
@@ -1092,10 +938,8 @@
   <audio controls>
   <source src="static/version_conditioning_pitch_only/concerto7_midi.mp3", type="audio/mpeg">
   </audio>
-  <!-- </small></small> -->
   <br>
   <div class="columns is-centered">
-    <!-- <small><small> -->
     <div class="column">
         Version Condition:
         <audio controls>
@@ -1150,7 +994,6 @@
   <br>
 
   </small></small>
-  <!-- <br> -->
 
 
 
@@ -1161,10 +1004,8 @@
   <audio controls>
   <source src="static/version_conditioning_pitch_only/mozart_550_midi.mp3", type="audio/mpeg">
   </audio>
-  <!-- </small></small> -->
   <br>
   <div class="columns is-centered">
-    <!-- <small><small> -->
     <div class="column">
         Version Condition:
         <audio controls>
@@ -1218,7 +1059,6 @@
   <br>
 
   </small></small>
-  <!-- <br> -->
 
   <b>Bach's Mass in B Minor</b>
   <br>
@@ -1228,10 +1068,8 @@
   <audio controls>
   <source src="static/version_conditioning_pitch_only/mass_midi.mp3", type="audio/mpeg">
   </audio>
-  <!-- </small></small> -->
   <br>
   <div class="columns is-centered">
-    <!-- <small><small> -->
     <div class="column">
         Version Condition:
         <audio controls>
@@ -1294,9 +1132,7 @@
     } else {
       x.style.display = "none";
     }
-  // function myFunction() {
-  //         $("#buttonDiv").toggle();
-  //     }
+
   }
   </script>
   <center>
@@ -1309,7 +1145,6 @@
                                         background-color:#4CAF50; /* Green */
                                         border: none;
                                         cursor: pointer;">
-  <!-- More<br>Samples -->
   More
   </button>
   </center>
@@ -1322,10 +1157,8 @@
   <audio controls>
   <source src="static/version_conditioning_pitch_only/mozart_string_midi.mp3", type="audio/mpeg">
   </audio>
-  <!-- </small></small> -->
   <br>
   <div class="columns is-centered">
-    <!-- <small><small> -->
     <div class="column">
         Version Condition:
         <audio controls>
@@ -1458,10 +1291,6 @@
   In the following samples, the exact same MIDI (including instrumentation) is synthesized with different version conditions.
   <br>
   Samples in this section are from the alignment-conditioned model.
-  <!-- <br> -->
-  <!-- For each sample, we provide a segment from the conditioning performance (upper), and our generated sample (lower).
-  <br>
-  For a fair comparison, <b>all segments from the conditioning performances are vocoded</b> with the Soundstream vocoder, also used for our generated samples. -->
   </p>
   <br>
 
@@ -1655,7 +1484,7 @@
   <br>
   <div class="columns is-centered">
     <div class="column is-one-quarter">
-        Performance Condition:
+        Version Condition:
         <audio controls>
         <source src="static/version_conditioning_instances/conditions/organ_5253_vocoded.mp3", type="audio/mpeg">
         </audio>
@@ -1666,7 +1495,7 @@
     </div>
 
     <div class="column is-one-quarter">
-        Performance Condition:
+        Version Condition:
         <audio controls>
         <source src="static/version_conditioning_instances/conditions/organ_5251_vocoded.mp3", type="audio/mpeg">
         </audio>
@@ -1694,7 +1523,7 @@
 
     <div class="column is-one-quarter">
 
-        Performance Condition (mixture with piano):
+        Version Condition (mixture with piano):
         <audio controls>
         <source src="static/version_conditioning_instances/conditions/violin_vs_vocoded.mp3", type="audio/mpeg">
         </audio>
@@ -1705,7 +1534,7 @@
     </div>
 
     <div class="column is-one-quarter">
-        Performance Condition (mixture with harpsichord):
+        Version Condition (mixture with harpsichord):
         <audio controls>
         <source src="static/version_conditioning_instances/conditions/violin_vhB_vocoded.mp3", type="audio/mpeg">
         </audio>
@@ -1716,7 +1545,7 @@
     </div>
 
     <div class="column is-one-quarter">
-        Performance Condition (mixture with harpsichord):
+        Version Condition (mixture with harpsichord):
         <audio controls>
         <source src="static/version_conditioning_instances/conditions/violin_vhA_vocoded.mp3", type="audio/mpeg">
         </audio>
@@ -1731,7 +1560,7 @@
 
 
     <div class="column is-one-quarter">
-      Performance Condition:
+      Version Condition:
       <audio controls>
       <source src="static/version_conditioning_instances/conditions/violin_bwv1004_vocoded.mp3", type="audio/mpeg">
       </audio>
@@ -1755,7 +1584,7 @@
   </audio>
   <div class="columns is-centered">
     <div class="column is-one-quarter">
-        Performance Condition:
+        Version Condition:
         <audio controls>
         <source src="static/version_conditioning_instances/conditions/guitar_17sor29_vocoded.mp3", type="audio/mpeg">
         </audio>
@@ -1766,7 +1595,7 @@
     </div>
 
     <div class="column is-one-quarter">
-        Performance Condition:
+        Version Condition:
         <audio controls>
         <source src="static/version_conditioning_instances/conditions/guitar_2419sor31_vocoded.mp3", type="audio/mpeg">
         </audio>
@@ -1778,7 +1607,7 @@
     </div>
 
     <div class="column is-one-quarter">
-        Performance Condition:
+        Version Condition:
         <audio controls>
         <source src="static/version_conditioning_instances/conditions/guitar_1201sor6_vocoded.mp3", type="audio/mpeg">
         </audio>
@@ -1804,7 +1633,7 @@
         <audio controls>
         <source src="static/version_conditioning_instances/concerto12_3_midi_piano.mp3", type="audio/mpeg">
         </audio>
-        Performance Condition (Cello, Violin & Piano):
+        Version Condition (Cello, Violin & Piano):
         <audio controls>
         <source src="static/version_conditioning_instances/conditions/concerto3_target_vocoded.mp3", type="audio/mpeg">
         </audio>
@@ -1820,7 +1649,7 @@
         <audio controls>
         <source src="static/version_conditioning_instances/concerto12_3_midi.mp3", type="audio/mpeg">
         </audio>
-        Performance Condition (Violin & Harpsichord):
+        Version Condition (Violin & Harpsichord):
         <audio controls>
         <source src="static/version_conditioning_instances/conditions/concerto2_target_vocoded.mp3", type="audio/mpeg">
         </audio>
@@ -1835,21 +1664,139 @@
   </small></small>
 
 
+  <br><br><br>
+
+
+  <h2 class="title is-3" id="section_comparison">Comparison to Hawthorne et al.<a href="#contents"><small><small><small><small>&nbsp;&nbsp;&nbsp;&nbsp;[Go to top]</small></small></small></small></a></h2>
+  <p>
+  Our main comparison is with Hawthorne et al. (2022). Although we use the same T5 backbone, there are 2 main differences between the models:
   <br>
+  (1) Data - We train on real data alone (~58 hours), including orchestral symphonies, while Hawthorne et al. train on mainly synthetic data (~1500 hours).
+  <br>
+  (2) We incorporate Version Conditioning.
+
+  </p>
+  <br>
+  <small><small>
+  <div class="columns is-centered">
+    <div class="column is-one-quarter">
+        <br>
+        Input MIDI:
+        <br>
+        <audio controls>
+        <source src="static/compare/pastoral1_midi.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Hawthorne et al. (flat timbre):
+        <br>
+        <audio controls>
+        <source src="static/compare/pastoral1_hawthorne.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Ours Version Condition I:
+        <br>
+        <audio controls>
+        <source src="static/compare/pastoral1_ours.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Ours Version Condition II:
+        <br>
+        <audio controls>
+        <source src="static/compare/pastoral1_ours_egmont.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="column is-one-quarter">
+        <br>
+        Input MIDI:
+        <br>
+        <audio controls>
+        <source src="static/compare/pastoral2_midi.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Hawthorne et al. (flat timbre):
+        <br>
+        <audio controls>
+        <source src="static/compare/pastoral2_hawthorne.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Ours Version Condition I:
+        <br>
+        <audio controls>
+        <source src="static/compare/pastoral2_ours.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Ours Version Condition II:
+        <br>
+        <audio controls>
+        <source src="static/compare/pastoral2_ours_egmont.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="column is-one-quarter">
+        <br>
+        Input MIDI:
+        <br>
+        <audio controls>
+        <source src="static/compare/toccata_midi.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Hawthorne et al. (flat timbre, timbre drift):
+        <br>
+        <audio controls>
+        <source src="static/compare/toccata_hawthorne.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Ours Version Condition I:
+        <br>
+        <audio controls>
+        <source src="static/compare/toccata_ours.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Ours Version Condition II:
+        <br>
+        <audio controls>
+        <source src="static/compare/toccata_ours2.mp3", type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="column is-one-quarter">
+        <br>
+        Input MIDI:
+        <br>
+        <audio controls>
+        <source src="static/compare/italian_midi.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Hawthorne et al:
+        <br>
+        <audio controls>
+        <source src="static/compare/italian_hawthorne.mp3", type="audio/mpeg">
+        </audio>
+        <br>
+        Ours Version Condition I:
+        <br>
+        <audio controls>
+        <source src="static/compare/italian_ours_wtc2.mp3", type="audio/mpeg">
+
+        </audio>
+        <br>
+        Ours Version Condition II:
+        <br>
+        <audio controls>
+        <source src="static/compare/italian_ours_wtce.mp3", type="audio/mpeg">
+        </audio>
+    </div>
 
 
+  </div>
+  </small></small>
+  <br><br><br>
 
 
-
-</div>
-
-<section class="section">
-  <div class="container is-widescreen">
     <h2 class="title is-3" id="section_pop_rock_jazz">Pop, Rock, and Jazz Music with Zero-Shot Transcription-Conditioning<a href="#contents"><small><small><small><small>&nbsp;&nbsp;&nbsp;&nbsp;[Go to top]</small></small></small></small></a></h2>
     In this section we provide samples of performances generated by a synthesizer trained on rock and pop music albums. For note conditions, we used predicted transcriptions of an existing transcriber. <b>In the model used in this section, all training performances are unknown to the transcriber.</b> The transcriber was trained mainly on rock albums, with unalinged MIDIs, following <a href="https://benadar293.github.io">Maman and Bermano, 2022</a>. However, <b>instrumentation in MIDIs of pop and rock music is extremely prone to inaccuracies and incosistencies</b>, and we therefore rely on the synthesizer's generative power, and on Version Conditioning, to produce likely instrumentation. Improving instrument disentanglement in such genres is an important direction for future work, and we believe improved transcription will enable more control in the generation process.
     <br>
-    <!-- <br> -->
-    <!-- <b>In the model used in this section, all training performances are unknown to the transcriber.</b> -->
     <br>
     Note the ability of the model to <b>generate drums</b>, as the MIDI input contains only pitch and instrument (without drums).
     <br>
@@ -1895,26 +1842,6 @@
       </div>
 
 
-      <!-- <div class="column">
-          <small><small>MIDI: <b><span style="color:MediumVioletRed">Britney Spears, One More Time</span></b>
-          <br>Version Condition: <b>ABBA, Supertrooper</b>
-          <br><br>
-          Input MIDI:<br>
-          <audio id="baby_one_more_time_abba" controls>
-          <source src="static/rock_pop/baby_one_more_time_midi.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("baby_one_more_time_abba");
-          audio.volume = 0.5;
-          </script>
-          <br>Ours:<br>
-          <audio controls>
-          <source src="static/rock_pop/baby_one_more_time_abba.mp3", type="audio/mpeg">
-          </audio>
-          </small></small>
-      </div> -->
-
-
 
       <div class="column">
           <small><small>MIDI: <b>Beatles, Martha My Dear</b>
@@ -1957,25 +1884,6 @@
 
 
 
-      <!-- <div class="column">
-          <small><small>MIDI: <b><span style="color:MediumVioletRed">Britney Spears, One More Time</span></b>
-          <br>Version Condition: <b>Dick Schory, Music for Bang, Baroom, and Harp</b>
-          <br>
-          Input MIDI:<br>
-          <audio id="one_more_time_baroom" controls>
-          <source src="static/rock_pop/baby_one_more_time_midi.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("one_more_time_baroom");
-          audio.volume = 0.5;
-          </script>
-          <br>Ours:<br>
-          <audio controls>
-          <source src="static/rock_pop/baby_one_more_time_bang_baroom.mp3", type="audio/mpeg">
-          </audio>
-          </small></small>
-      </div> -->
-
 
 
 
@@ -1989,7 +1897,6 @@
 
       <div class="column">
         <small><small>MIDI: <b>Doors, Hello I Love You</b>
-        <!-- <br>Version Condition: <b><span style="color:Purple">Richard Bonynge & National Phil. Orchestra playing Tchaikovsky's Swan Lake</span></b> -->
         <br>Version Condition: <b>Metallica, Master of Puppets</b>
         <br><br>
         Input MIDI:<br>
@@ -2009,7 +1916,6 @@
       </div>
 
       <div class="column">
-          <!-- <small><small>MIDI: <b><span style="color:MediumVioletRed">Beatles, Let It Be</span></b> -->
           <small><small>MIDI: <b>Beatles, Let It Be</b>
           <br>Version Condition: <b>Queen, A Night at The Opera</b>
           <br><br>
@@ -2027,27 +1933,6 @@
           </audio>
           </small></small>
       </div>
-
-
-      <!-- <div class="column">
-        <small><small>MIDI: <b>Eric Clapton, Layla</b>
-        <br>Version Condition: <b><span style="color:MediumVioletRed">Metallica, Master of Puppets</span></b>
-        <br><br>
-        Input MIDI:<br>
-        <audio id="hello" controls>
-        <source src="static/rock_pop/layla_midi.mp3", type="audio/mpeg">
-        </audio>
-        <script>
-        var audio = document.getElementById("hello");
-        audio.volume = 0.5;
-        </script>
-        <br>Ours:<br>
-        <audio controls>
-        <source src="static/rock_pop/layla_metallica.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-
-      </div> -->
 
       <div class="column">
           <small><small>MIDI: <b>Frank Zappa, Dancin' Fool</b>
@@ -2088,101 +1973,12 @@
           </small></small>
       </div>
 
-      <!-- <div class="column">
-          <small><small>MIDI: <b>Beatles, Martha My Dear</b>
-          <br>Version Condition: <b>Beatles, Abbey Road</b>
-          <br><br>
-          Input MIDI:<br>
-          <audio id="one_more_time_baroom" controls>
-          <source src="static/rock_pop/martha_my_dear_beatles_midi.mp3", type="audio/mpeg">
-          </audio>
-          <script>
-          var audio = document.getElementById("one_more_time_baroom");
-          audio.volume = 0.5;
-          </script>
-          <br>Ours:<br>
-          <audio controls>
-          <source src="static/rock_pop/martha_my_dear_beatles.mp3", type="audio/mpeg">
-          </audio>
-          </small></small>
-      </div> -->
 
-
-
-
-      <!-- <div class="column">
-        <small><small>MIDI: <b>Beatles, Martha My Dear</b>
-        <br>Version Condition: <b>Beatles, Abbey Road</b>
-        <br><br>
-        Input MIDI:<br>
-        <audio id="brahms_hungarian_dance_beethoven_piano_trios_MIDI" controls>
-        <source src="static/rock_pop/martha_my_dear_beatles_midi.mp3", type="audio/mpeg">
-        </audio>
-        <script>
-        var audio = document.getElementById("brahms_hungarian_dance_beethoven_piano_trios_MIDI");
-        audio.volume = 0.5;
-        </script>
-        <br>Ours:<br>
-        <audio controls>
-        <source src="static/rock_pop/martha_my_dear_beatles.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-      </div> -->
-
-
-
-
-      <!-- <div class="column">
-        <small><small>MIDI: <b>Eric Clapton, Layla</b>
-        <br>Version Condition: <b><span style="color:OrangeRed">Metallica, Master of Puppets</span></b>
-        <br><br>
-        Input MIDI:<br>
-        <audio controls>
-        <source src="static/rock_pop/layla_midi.mp3", type="audio/mpeg">
-        </audio>
-        <br>Ours:<br>
-        <audio controls>
-        <source src="static/rock_pop/layla_metallica.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-      </div> -->
-
-      <!-- <div class="column">
-        <small><small>MIDI: <b>Beatles, Let It Be</b>
-        <br>Version Condition: <b><span style="color:ForestGreen">Guns N' Roses, Appetite for Destruction</span></b>
-        <br>
-        Input MIDI:
-        <br>
-        <audio controls>
-        <source src="static/rock_pop/let_it_be_guns_midi.mp3", type="audio/mpeg">
-        </audio>
-        <br>
-        Ours:
-        <br>
-        <audio controls>
-        <source src="static/rock_pop/let_it_be_guns_n_roses.mp3", type="audio/mpeg">
-        </audio>
-        </small></small>
-      </div> -->
-
-      <!-- <div class="column">
-          <small><small>MIDI: <b>Beatles, Let It Be</b>
-          <br>Version Condition: <b>Queen, A Night at The Opera</b>
-          <br><br>
-          Input MIDI:<br>
-          <audio id="mozart_symphony40_p4_brahms_haydn_variations_MIDI" controls>
-          <source src="static/rock_pop/let_it_be_queen_midi.mp3", type="audio/mpeg">
-          </audio>
-          <br>Ours:<br>
-          <audio controls>
-          <source src="static/rock_pop/let_it_be_queen.mp3", type="audio/mpeg">
-          </audio>
-          </small></small>
-      </div> -->
     </div>
 
-    <!-- <br> -->
     <br>
+
+
 
     <h2 class="title is-5" id="section_pop_rock_jazz_version">Version Conditioning Effect in Pop, Rock, and Jazz Music</h2>
     <p>
@@ -2191,8 +1987,8 @@
     <br>
 
     <b>Britney Spears, One More Time</b><br>
-    In this example, Britney Spears' One More Time is generated in two styles: ABBA's Super Trouper album, and Dick Schory's Music For Bang, Baaroom and Harp, which comprises mainly pitched percussion instruments.
-    <br>
+    In this example, Britney Spears' One More Time is generated in two versions: ABBA's Super Trouper album, and Dick Schory's Music For Bang, Baaroom and Harp, which comprises mainly pitched percussion instruments.
+    <br><br>
     <small><small>
     Input MIDI:<br>
     <audio id="baby_one_more_time_abba" controls>
@@ -2204,26 +2000,16 @@
     </script>
     <div class="columns is-centered">
       <div class="column is-one-quarter">
-          Version Condition: </small></small><a href="https://www.youtube.com/watch?v=cBjAZvpJDQs&list=PLI6kLIhBBwmQxgm5qbckYpm24GVKQ6Q7R"> ABBA, Super Trouper</a><small><small>
+          Version Condition: <a href="https://www.youtube.com/watch?v=cBjAZvpJDQs&list=PLI6kLIhBBwmQxgm5qbckYpm24GVKQ6Q7R"><b>ABBA, Super Trouper</b></a>
           <br>
-          <!-- <audio controls>
-          <source src="static/rock_pop/something.mp3", type="audio/mpeg">
-          </audio> -->
-          <br>
-
-          <!-- Ours:<br> -->
           <audio controls>
           <source src="static/rock_pop/baby_one_more_time_abba.mp3", type="audio/mpeg">
           </audio>
       </div>
 
       <div class="column is-one-quarter">
-          Version Condition: </small></small><a href="https://www.youtube.com/watch?v=J0I86j1UFic&list=PL7lQodAyoMUBN0ysAktYTAMiwy3WfnpCo">Music For Bang, Baaroom and Harp</a><small><small>
-          <!-- <audio controls>
-          <source src="static/performance_conditioning/organ_5251_vocoded.mp3", type="audio/mpeg">
-          </audio> -->
+          Version Condition: <a href="https://www.youtube.com/watch?v=J0I86j1UFic&list=PL7lQodAyoMUBN0ysAktYTAMiwy3WfnpCo"><b>Music For Bang, Baaroom and Harp</b></a>
           <br>
-          <!-- Ours:<br> -->
           <audio controls>
           <source src="static/rock_pop/baby_one_more_time_bang_baroom.mp3", type="audio/mpeg">
           </audio>
@@ -2244,24 +2030,16 @@
     <br>
     <div class="columns is-centered">
       <div class="column is-one-quarter">
-          Version Condition: </small></small><a href="https://www.youtube.com/watch?v=0CNPR2qNzxk&list=PL6ogdCG3tAWiPhX1-iTHcvnsO2ek1nlJl">Guns N' Roses, Appetite for Destruction</a><small><small>
-          <!-- <audio controls>
-          <source src="static/performance_conditioning/organ_5253_vocoded.mp3", type="audio/mpeg">
-          </audio> -->
+          Version Condition: <a href="https://www.youtube.com/watch?v=0CNPR2qNzxk&list=PL6ogdCG3tAWiPhX1-iTHcvnsO2ek1nlJl"><b>Guns N' Roses, Appetite for Destruction</b></a>
           <br>
-          <!-- Ours:<br> -->
           <audio controls>
           <source src="static/rock_pop/let_it_be_guns_n_roses_2.mp3", type="audio/mpeg">
           </audio>
       </div>
 
       <div class="column is-one-quarter">
-          Version Condition: </small></small><a href="https://www.youtube.com/watch?v=81t8mi5i0X0&list=PLBnJv6rImVe9XXPLwK2CvysVd_CnrYB81">Queen, A Night at The Opera</a><small><small>
-          <!-- <audio controls>
-          <source src="static/performance_conditioning/organ_5251_vocoded.mp3", type="audio/mpeg">
-          </audio> -->
-          <br>
-          <!-- Ours:<br> -->
+          Version Condition: <a href="https://www.youtube.com/watch?v=81t8mi5i0X0&list=PLBnJv6rImVe9XXPLwK2CvysVd_CnrYB81"><b>Queen, A Night at The Opera</b></a>
+          <br><br>
           <audio controls>
           <source src="static/rock_pop/let_it_be_queen.mp3", type="audio/mpeg">
           </audio>
@@ -2270,133 +2048,7 @@
     </small></small>
     <br>
 
-    <h2 class="title is-3" id="section_comparison">Comparison to Hawthorne et al.<a href="#contents"><small><small><small><small>&nbsp;&nbsp;&nbsp;&nbsp;[Go to top]</small></small></small></small></a></h2>
-    <p>
-    Our main comparison is with Hawthorne et al. (2022). Although we use the same T5 backbone, there are 2 main differences between the models:
-    <br>
-    (1) Data - We train on real data alone (~58 hours), including orchestral symphonies, while Hawthorne et al. train on mainly synthetic data (~1500 hours).
-    <br>
-    (2) We incorporate Version Conditioning.
 
-    </p>
-    <br>
-    <small><small>
-    <div class="columns is-centered">
-      <div class="column is-one-quarter">
-          <br>
-          Input MIDI:
-          <br>
-          <!-- <h2 class="title is-7">Bach Harpsichord Concerto 2</h2> -->
-          <audio controls>
-          <source src="static/compare/pastoral1_midi.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Hawthorne et al. (flat timbre):
-          <br>
-          <audio controls>
-          <source src="static/compare/pastoral1_hawthorne.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Ours Performance Condition I:
-          <br>
-          <audio controls>
-          <source src="static/compare/pastoral1_ours.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Ours Performance Condition II:
-          <br>
-          <audio controls>
-          <source src="static/compare/pastoral1_ours_egmont.mp3", type="audio/mpeg">
-          </audio>
-      </div>
-
-      <div class="column is-one-quarter">
-          <br>
-          Input MIDI:
-          <br>
-          <audio controls>
-          <source src="static/compare/pastoral2_midi.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Hawthorne et al. (flat timbre):
-          <br>
-          <audio controls>
-          <source src="static/compare/pastoral2_hawthorne.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Ours Performance Condition I:
-          <br>
-          <audio controls>
-          <source src="static/compare/pastoral2_ours.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Ours Performance Condition II:
-          <br>
-          <audio controls>
-          <source src="static/compare/pastoral2_ours_egmont.mp3", type="audio/mpeg">
-          </audio>
-      </div>
-
-      <div class="column is-one-quarter">
-          <br>
-          Input MIDI:
-          <br>
-          <audio controls>
-          <source src="static/compare/toccata_midi.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Hawthorne et al. (flat timbre, timbre drift):
-          <br>
-          <audio controls>
-          <source src="static/compare/toccata_hawthorne.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Ours Performance Condition I:
-          <br>
-          <audio controls>
-          <source src="static/compare/toccata_ours.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Ours Performance Condition II:
-          <br>
-          <audio controls>
-          <source src="static/compare/toccata_ours2.mp3", type="audio/mpeg">
-          </audio>
-      </div>
-
-      <div class="column is-one-quarter">
-          <br>
-          Input MIDI:
-          <br>
-          <audio controls>
-          <source src="static/compare/italian_midi.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Hawthorne et al:
-          <br>
-          <audio controls>
-          <source src="static/compare/italian_hawthorne.mp3", type="audio/mpeg">
-          </audio>
-          <br>
-          Ours Performance Condition I:
-          <br>
-          <audio controls>
-          <source src="static/compare/italian_ours_wtc2.mp3", type="audio/mpeg">
-
-          </audio>
-          <br>
-          Ours Performance Condition II:
-          <br>
-          <audio controls>
-          <source src="static/compare/italian_ours_wtce.mp3", type="audio/mpeg">
-          </audio>
-      </div>
-
-
-    </div>
-    </small></small>
-    <br>
-    <br>
 
 
     <h2 class="title is-3" id="vocoder">Vocoder Quality<a href="#contents"><small><small><small><small>&nbsp;&nbsp;&nbsp;&nbsp;[Go to top]</small></small></small></small></a></h2>
@@ -2474,61 +2126,11 @@
     </small></small>
     <br>
 
-    <!-- <h2 class="title is-3">Comparison</h2>
-    <p>
-    Our main comparison is with Hawthorne et al. (2022). Although we use the same T5 backbone, there are 2 main differences between the models:
-    <br>
-    (1) Data - We train on real data alone (~58 hours), including orchestral symphonies, while Hawthorne et al. train on mainly synthetic data (~1500 hours).
-    <br>
-    (2) We incorporate Version Conditioning.
-    </p>
-    For qualitative comparison with Hawthorne et al. (2022), see our <a href="https://benadar293.github.io/midipm">ICASSP 2024 paper's project page</a>.
-    <br>
-    <br>
-
-
-    <h2 class="title is-3">Vocoder Quality</h2>
-    <p>
-    The Soundstream vocoder's quality is an upper bound on the quality of our generated performances.
-    <br>
-    For examples demonstrating the vocoder's quality, see our <a href="https://benadar293.github.io/midipm">ICASSP 2024 paper's project page</a>.
-    <br>
-
-    <br> -->
-  </div>
 </section>
 
 
 
 
-
-<!--BibTex citation -->
-  <!-- <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section> -->
-<!--End BibTex citation -->
-
-
-  <!-- <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer> -->
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
@@ -2536,7 +2138,6 @@
          href="https://proceedings.mlr.press/v162/maman22a.html">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <!-- <a class="icon-link" href="https://github.com/benadar293/benadar293.github.io" class="external-link" disabled> -->
       <a class="icon-link" href="my_repo" class="external-link" disabled>
 
         <i class="fab fa-github"></i>
@@ -2566,11 +2167,6 @@
 
 </footer>
 
-<!-- Statcounter tracking code -->
-
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
 
   </body>
   </html>
