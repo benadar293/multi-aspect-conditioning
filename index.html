@@ -165,6 +165,7 @@
     <li><a href="#section_instances">Version Conditioning for different instances of the same instruments</li>
     <li><a href="#section_comparison">Comparison to Hawthorne et al.</li>
     <li><a href="#section_pop_rock_jazz">Pop, rock, and jazz music with zero-shot transcription-conditioning</li>
+    <li><a href="#interpolation">Version Interpolation</a></li>
     <li><a href="#vocoder">Vocoder quality</a></li>
     </ul>
     <br>
@@ -2049,9 +2050,115 @@
       </div>
     </div>
     </small></small>
+    <br><br>
+
+
+
+
+
+
+    <h2 class="title is-3" id="interpolation">Version Interpolation<a href="#contents"><small><small><small><small>&nbsp;&nbsp;&nbsp;&nbsp;[Go to top]</small></small></small></small></a></h2>
+    <p>
+    We provide samples for version interpolation. In each sample, we use interpolation weights varying linearly across time: The first version's weight decreases linearly from 1 to 0, while the other's increases linearly from 0 to 1, with both weights summing up to 1. We then apply the same process in the opposite direction. Interpolation weights are changed by 0.2 at each segment w.r.t. the previous one.
+     <!-- In each generated segment, we increase one version's weight by 0.2 and decrease the other's by 0.2, until reaching weights of 1 and 0, then apply the same process in the opposite direction. -->
     <br>
+    The result is the version shifting smoothly back and forth between the two versions.
+    <br>
+    To isolate the interpolated version condition from the instrument condition, we use pitch-only input.
+    </p>
+    <br>
+    <small><small>
+    <div class="columns is-centered">
 
 
+      <div class="column is-one-quarter">
+
+
+          Version 1 (organ):
+          <audio controls>
+          <source src="static/version_conditioning_instances/conditions/organ_5251_vocoded.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Version 2 (piano):
+          <audio controls>
+          <source src="static/interpolation_samples/versions/mozart_sonata_13.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Input MIDI:
+          <br>
+          <audio controls>
+          <source src="static/interpolation_samples/midi/toccata_midi.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Ours (interpolated back and forth, organ & piano):
+          <br>
+          <audio controls>
+          <source src="static/interpolation_samples/version_embedding/toccata.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+      </div>
+
+
+
+      <div class="column is-one-quarter">
+
+          Version 1 (guitar):
+          <br>
+          <audio controls>
+          <source src="static/interpolation_samples/versions/sor_mozart_variations.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Version 2 (wind quintet):
+          <br>
+          <audio controls>
+          <source src="static/version_conditioning_pitch_only/conditions/cambini.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Input MIDI:
+          <br>
+          <audio controls>
+          <source src="static/interpolation_samples/midi/badineri_midi.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Ours (interpolated back and forth, guitar & wind):
+          <br>
+          <audio controls>
+          <source src="static/interpolation_samples/version_embedding/badineri.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+      </div>
+
+      <div class="column is-one-quarter">
+          Version 1 (harpsichord):
+          <br>
+          <audio controls>
+          <source src="static/version_conditioning_instances/conditions/harpsichord_goldberg_vocoded.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Version 2 (violin):
+          <br>
+          <audio controls>
+          <source src="static/version_conditioning_pitch_only/conditions/bwv1003.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Input MIDI:
+          <br>
+          <audio controls>
+          <source src="static/interpolation_samples/midi/english_suite_midi.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Ours (interpolated back and forth, harps. & violin):
+          <br>
+          <audio controls>
+          <source src="static/interpolation_samples/version_embedding/english_suite.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+      </div>
+
+
+    </div>
+    </small></small>
+    <br>
 
 
     <h2 class="title is-3" id="vocoder">Vocoder Quality<a href="#contents"><small><small><small><small>&nbsp;&nbsp;&nbsp;&nbsp;[Go to top]</small></small></small></small></a></h2>
@@ -2127,7 +2234,7 @@
 
     </div>
     </small></small>
-    <br>
+    <br><br>
 
 </section>
 
