@@ -165,6 +165,7 @@
     <li><a href="#section_instances">Version Conditioning for different instances of the same instruments</li>
     <li><a href="#section_comparison">Comparison to Hawthorne et al.</li>
     <li><a href="#section_pop_rock_jazz">Pop, rock, and jazz music with zero-shot transcription-conditioning</li>
+    <li><a href="#trill_embeddings">Unseen Versions using TRILL Embeddings</a></li>
     <li><a href="#interpolation">Version Interpolation</a></li>
     <li><a href="#vocoder">Vocoder quality</a></li>
     </ul>
@@ -2054,6 +2055,75 @@
 
 
 
+    <h2 class="title is-3" id="trill_embeddings">Unseen Versions using TRILL Embeddings<a href="#contents"><small><small><small><small>&nbsp;&nbsp;&nbsp;&nbsp;[Go to top]</small></small></small></small></a></h2>
+    In this section we provide samples of performances generated with version condition provided by an audio sample. For this, we fine-tuned the model such that the version condition will be defined by the mean TRILL embedding over windows of varying lengths.
+    <br><br>
+
+    <b>BWV 29</b><br>
+    <small><small>
+    Input MIDI:
+    <br>
+    <audio controls>
+    <source src="static/version_conditioning_trill/midi/bwv29_midi.mp3", type="audio/mpeg">
+    </audio>
+    <br>
+    <div class="columns is-centered">
+      <div class="column">
+          Version Condition:
+          <audio controls>
+          <source src="static/version_conditioning_trill/conditions/paganini_caprices_vocoded.mp3", type="audio/mpeg">
+          </audio>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/version_conditioning_trill/bwv29_paganini_caprices.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column">
+          Version Condition:
+          <br>
+          <audio controls>
+          <source src="static/version_conditioning_trill/conditions/malaguena_vocoded.mp3", type="audio/mpeg">
+          </audio>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/version_conditioning_trill/bwv29_malaguena.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+
+
+      <div class="column">
+          Version Condition:
+          <audio controls>
+          <source src="static/version_conditioning_trill/conditions/bach_french_vocoded.mp3", type="audio/mpeg">
+          </audio>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/version_conditioning_trill/bwv29_bach_french.mp3", type="audio/mpeg">
+          </audio>
+      </div>
+
+      <div class="column">
+          Version Condition:
+          <audio controls>
+          <!-- <source src="static/version_conditioning_trill/conditions/buxtehude_prelude_vocoded.mp3", type="audio/mpeg"> -->
+          <source src="static/version_conditioning_trill/conditions/buxtehude_prelude.mp3", type="audio/mpeg">
+          </audio>
+          <br>Ours:<br>
+          <audio controls>
+          <source src="static/version_conditioning_trill/bwv29_buxtehude_prelude.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+      </div>
+
+
+    </div>
+
+    <br>
+  </small></small>
+
+    <br><br>
 
 
 
@@ -2089,11 +2159,17 @@
           <audio controls>
           <source src="static/interpolation_samples/midi/toccata_midi.mp3", type="audio/mpeg">
           </audio>
-          <br>
-          Ours (interpolated back and forth, organ & piano):
+          <br><br>
+          Ours, Interpolation in Version Embedding Space (back and forth between organ & piano):
           <br>
           <audio controls>
           <source src="static/interpolation_samples/version_embedding/toccata.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Ours, Interpolation in Epsilon Space (back and forth between organ & piano):
+          <br>
+          <audio controls>
+          <source src="static/interpolation_samples/epsilon_space/toccata.mp3", type="audio/mpeg">
           </audio>
           <br>
       </div>
@@ -2119,11 +2195,54 @@
           <audio controls>
           <source src="static/interpolation_samples/midi/badineri_midi.mp3", type="audio/mpeg">
           </audio>
+          <br><br>
+          Ours, Interpolation in Version Embedding Space
           <br>
-          Ours (interpolated back and forth, guitar & wind):
+          (back and forth between guitar & wind):
           <br>
           <audio controls>
           <source src="static/interpolation_samples/version_embedding/badineri.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Ours, Interpolation in Epsilon Space
+          <br>
+          (back and forth between guitar & wind):
+          <br>
+          <audio controls>
+          <source src="static/interpolation_samples/epsilon_space/badineri.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+      </div>
+
+      <div class="column is-one-quarter">
+
+
+          Version 1 (guitar):
+          <audio controls>
+          <source src="static/interpolation_samples/versions/sor_mozart_variations.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Version 2 (orchestra):
+          <audio controls>
+          <source src="static/interpolation_samples/versions/mozart_symphony_35.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Input MIDI:
+          <br>
+          <audio controls>
+          <source src="static/interpolation_samples/midi/pastoral_midi.mp3", type="audio/mpeg">
+          </audio>
+          <br><br>
+          Ours, Interpolation in Version Embedding Space (back and forth between organ & piano):
+          <br>
+          <audio controls>
+          <source src="static/interpolation_samples/version_embedding/pastoral_2.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Ours, Interpolation in Epsilon Space (back and forth between guitar & orchestra):
+          <br>
+          <audio controls>
+          <source src="static/interpolation_samples/epsilon_space/pastoral_2.mp3", type="audio/mpeg">
           </audio>
           <br>
       </div>
@@ -2146,11 +2265,21 @@
           <audio controls>
           <source src="static/interpolation_samples/midi/english_suite_midi.mp3", type="audio/mpeg">
           </audio>
+          <br><br>
+          Ours, Interpolation in Version Embedding Space
           <br>
-          Ours (interpolated back and forth, harps. & violin):
+          (back and forth between harpsichord & violin):
           <br>
           <audio controls>
           <source src="static/interpolation_samples/version_embedding/english_suite.mp3", type="audio/mpeg">
+          </audio>
+          <br>
+          Ours, Interpolation in Epsilon Space
+          <br>
+          (back and forth between harpsichord & violin):
+          <br>
+          <audio controls>
+          <source src="static/interpolation_samples/epsilon_space/english_suite.mp3", type="audio/mpeg">
           </audio>
           <br>
       </div>
