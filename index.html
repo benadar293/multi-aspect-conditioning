@@ -2056,7 +2056,9 @@
 
 
     <h2 class="title is-3" id="trill_embeddings">Unseen Versions using TRILL Embeddings<a href="#contents"><small><small><small><small>&nbsp;&nbsp;&nbsp;&nbsp;[Go to top]</small></small></small></small></a></h2>
-    In this section we provide samples of performances generated with version condition provided by an audio sample. For this, we fine-tuned the model such that the version condition will be defined by the mean TRILL embedding over windows of varying lengths.
+    In this section we provide samples of performances generated with version conditions provided by audio samples, enabling conditioning on unseen versions. For this, we fine-tuned the model such that the version condition will be defined by the mean TRILL embedding over the version.
+    <br>
+    To isolate the interpolated version condition from the instrument condition, we use pitch-only input.
     <br><br>
 
     <b>BWV 29</b><br>
@@ -2298,13 +2300,17 @@
           <source src="static/interpolation_samples/midi/pastoral_1_midi.mp3", type="audio/mpeg">
           </audio>
           <br><br>
-          Ours, Interpolation in Version Embedding Space (back and forth between organ & piano):
+          Ours, Interpolation in Version Embedding Space
+          <br>
+          (back and forth between organ & piano):
           <br>
           <audio controls>
           <source src="static/interpolation_samples/version_embedding/pastoral_2.mp3", type="audio/mpeg">
           </audio>
           <br>
-          Ours, Interpolation in Epsilon Space (back and forth between guitar & orchestra):
+          Ours, Interpolation in Epsilon Space
+          <br>
+          (back and forth between guitar & orchestra):
           <br>
           <audio controls>
           <source src="static/interpolation_samples/epsilon_space/pastoral_2.mp3", type="audio/mpeg">
