@@ -2061,7 +2061,7 @@
     To isolate the interpolated version condition from the instrument condition, we use pitch-only input.
     <br><br>
 
-    <b>BWV 29</b><br>
+    <b>Bach Cantata BWV 29</b><br>
     <small><small>
     Input MIDI:
     <br>
@@ -2188,11 +2188,9 @@
     </div>
 
     <br>
-  </small></small>
+    </small></small>
 
-    <br><br>
-
-
+    <br>
 
     <h2 class="title is-3" id="interpolation">Version Interpolation<a href="#contents"><small><small><small><small>&nbsp;&nbsp;&nbsp;&nbsp;[Go to top]</small></small></small></small></a></h2>
     <p>
@@ -2201,6 +2199,11 @@
     <br>
     The result is the version shifting smoothly back and forth between the two versions.
     <br>
+    We use two different interpolation techniques:
+    <ul style="list-style-type:disc;padding-left:40px">
+    <li>Interpolating version embeddings ("Version Embedding Space").</li>
+    <li>Interpolating predictions ("Epsilon Space").</li>
+    </ul>
     To isolate the interpolated version condition from the instrument condition, we use pitch-only input.
     </p>
     <br>
@@ -2362,7 +2365,7 @@
 
     </div>
     </small></small>
-    <br>
+    <br><br>
 
 
     <h2 class="title is-3" id="vocoder">Vocoder Quality<a href="#contents"><small><small><small><small>&nbsp;&nbsp;&nbsp;&nbsp;[Go to top]</small></small></small></small></a></h2>
