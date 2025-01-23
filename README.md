@@ -1,5 +1,6 @@
 # Multi-Aspect Conditioning for Diffusion-Based Music Synthesis: Enhancing Realism and Control
 [Project Page](https://benadar293.github.io/multi-aspect-conditioning) for our [TASLP 2024 paper:](https://ieeexplore.ieee.org/document/10771710) Maman et al., "Multi-Aspect Conditioning for Diffusion-Based Music Synthesis: Enhancing Realism and Control"
+
 [Listening Tests](https://benadar293.github.io/listening-tests) for evaluation of realism and version similarity
 
 ![alt text](static/images/overview_figure.png "Overview")
